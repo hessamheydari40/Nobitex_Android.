@@ -1,4 +1,4 @@
-from appium import webdriver as amir_driver
+from appium import webdriver as a
 from selenium import webdriver as web_driver
 
 
@@ -9,5 +9,5 @@ class AppuimSessionHandler():
 
     @staticmethod
     def open_application(appium_host='http://127.0.0.1:8888/wd/hub', caps=None):
-        driver = amir_driver.Remote(str(appium_host), desired_capabilities=caps)
+        driver = a.Remote(str(appium_host), desired_capabilities=caps)
         return driver
