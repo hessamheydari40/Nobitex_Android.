@@ -35,3 +35,89 @@ class TestCases():
         openn.find_element_by_xpath("//*[@text='افزایش موجودی']")
         sleep(5)
 
+
+    def NOBIAPP53(self):
+        app_path = Path(__file__).parent.parent
+        app_path = join(str(app_path), 'app', 'Nobitex_Testnet.apk')
+        caps = {
+            'platformName': device_platform, 'fullReset': full_reset, 'deviceName': device_name,
+            'automationName': 'UiAutomator2',
+            'skipServerInstallation': False, 'appActivity': app_acctivity, 'noReset': no_reset,
+            'udid': udid, 'newCommandTimeout': 1200, 'autoGrantPermissions': True,
+            'appPackage': app_package, 'disableWindowAnimation': True, 'app': app_path
+        }
+        openn = AppuimSessionHandler.AppuimSessionHandler.open_application(caps=caps)
+        sleep(4)
+
+        openn.find_element_by_id('navigation_trades').click()
+        sleep(2)
+        openn.find_element_by_id("tradeTypeSpinner").click()
+        sleep(3)
+        openn.find_element_by_xpath("//*[@text='سریع']").click()
+        sleep(1.5)
+        openn.find_element_by_id('amountMET').send_keys('0.001')
+        sleep(1.5)
+        openn.find_element_by_xpath("//*[@text='خرید بیت‌کوین']").click()
+        sleep(3)
+        openn.find_element_by_xpath("//*[@text='افزایش موجودی']")
+        sleep(5)
+    def NOBIAPP62(self):
+        app_path = Path(__file__).parent.parent
+        app_path = join(str(app_path), 'app', 'Nobitex_Testnet.apk')
+        caps = {
+            'platformName': device_platform, 'fullReset': full_reset, 'deviceName': device_name,
+            'automationName': 'UiAutomator2',
+            'skipServerInstallation': False, 'appActivity': app_acctivity, 'noReset': no_reset,
+            'udid': udid, 'newCommandTimeout': 1200, 'autoGrantPermissions': True,
+            'appPackage': app_package, 'disableWindowAnimation': True, 'app': app_path
+        }
+        openn = AppuimSessionHandler.AppuimSessionHandler.open_application(caps=caps)
+        sleep(4)
+
+
+        openn.find_element_by_id('navigation_trades').click()
+        sleep(2)
+        openn.find_element_by_id("tradeTypeSpinner").click()
+        sleep(3)
+        openn.find_element_by_xpath("//*[@text='سریع']").click()
+        sleep(1.5)
+        openn.find_element_by_xpath("//*[@text='100%']").click()
+        sleep(1.5)
+        openn.find_element_by_xpath("//*[@text='خرید بیت‌کوین']").click()
+        sleep(3)
+        openn.find_element_by_xpath("//*[@text='افزایش موجودی']")
+        sleep(5)
+
+    def NOBIAPP54(self):
+        app_path = Path(__file__).parent.parent
+        app_path = join(str(app_path), 'app', 'Nobitex_Testnet.apk')
+        caps = {
+            'platformName': device_platform, 'fullReset': full_reset, 'deviceName': device_name,
+            'automationName': 'UiAutomator2',
+            'skipServerInstallation': False, 'appActivity': app_acctivity, 'noReset': no_reset,
+            'udid': udid, 'newCommandTimeout': 1200, 'autoGrantPermissions': True,
+            'appPackage': app_package, 'disableWindowAnimation': True, 'app': app_path
+        }
+        openn = AppuimSessionHandler.AppuimSessionHandler.open_application(caps=caps)
+        sleep(4)
+
+        openn.find_element_by_id('navigation_trades').click()
+        sleep(2)
+        openn.find_element_by_id("tradeTypeSpinner").click()
+        sleep(3)
+        openn.find_element_by_xpath("//*[@text='حد ضرر']").click()
+        sleep(1.5)
+        openn.find_element_by_id('triggerMET').send_keys('1125000000')
+        sleep(1.5)
+        openn.find_element_by_id('priceMET').send_keys('1100000000')
+        sleep(1.5)
+        openn.find_element_by_id('amountMET').send_keys('0.001')
+        sleep(1.5)
+        openn.find_element_by_xpath("//*[@text='خرید بیت‌کوین']").click()
+        sleep(3)
+        openn.find_element_by_xpath("//*[@text='افزایش موجودی']")
+        sleep(5)
+
+
+
+
