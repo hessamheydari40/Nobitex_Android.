@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.9.7 on win32)" generated="20220406 12:09:38.716" rpa="false" schemaversion="3">
-<suite id="s1" name="One" source="C:\Users\ad\PycharmProjects\pythonProject1\one.robot">
-<test id="s1-t1" name="NOBIAPP54" line="14">
-<kw name="NOBIAPP 54" library="TestCases">
-<status status="PASS" starttime="20220406 12:09:38.863" endtime="20220406 12:10:18.729"/>
+<robot generator="Robot 5.0 (Python 3.9.7 on win32)" generated="20220406 16:56:56.549" rpa="false" schemaversion="3">
+<suite id="s1" name="Test Manager" source="C:\Users\ad\PycharmProjects\pythonProject1\test_manager.robot">
+<test id="s1-t1" name="NOBIAPP63" line="33">
+<kw name="NOBIAPP 63" library="TestCases">
+<status status="PASS" starttime="20220406 16:56:56.737" endtime="20220406 16:57:26.504"/>
 </kw>
 <tag>DEBUG</tag>
-<status status="PASS" starttime="20220406 12:09:38.863" endtime="20220406 12:10:18.729"/>
+<status status="PASS" starttime="20220406 16:56:56.737" endtime="20220406 16:57:26.504"/>
 </test>
 <doc>Suite description</doc>
-<status status="PASS" starttime="20220406 12:09:38.717" endtime="20220406 12:10:18.730"/>
+<status status="PASS" starttime="20220406 16:56:56.550" endtime="20220406 16:57:26.506"/>
 </suite>
 <statistics>
 <total>
@@ -19,7 +19,7 @@
 <stat pass="1" fail="0" skip="0">DEBUG</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="One">One</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test Manager">Test Manager</stat>
 </suite>
 </statistics>
 <errors>
