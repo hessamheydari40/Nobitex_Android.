@@ -1,15 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.9.7 on win32)" generated="20220406 16:56:56.549" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0 (Python 3.9.7 on win32)" generated="20220408 18:51:04.577" rpa="false" schemaversion="3">
 <suite id="s1" name="Test Manager" source="C:\Users\ad\PycharmProjects\pythonProject1\test_manager.robot">
-<test id="s1-t1" name="NOBIAPP63" line="33">
-<kw name="NOBIAPP 63" library="TestCases">
-<status status="PASS" starttime="20220406 16:56:56.737" endtime="20220406 16:57:26.504"/>
+<test id="s1-t1" name="NOBIAPP57" line="87">
+<kw name="Open Application" library="General">
+<status status="PASS" starttime="20220408 18:51:04.718" endtime="20220408 18:51:19.780"/>
+</kw>
+<kw name="Trades Tab" library="TabBar">
+<status status="PASS" starttime="20220408 18:51:19.780" endtime="20220408 18:51:20.010"/>
+</kw>
+<kw name="Select Order Type Changer" library="Tradestab">
+<status status="PASS" starttime="20220408 18:51:20.010" endtime="20220408 18:51:23.050"/>
+</kw>
+<kw name="Select Trigger Order Type" library="Tradestab">
+<status status="PASS" starttime="20220408 18:51:23.050" endtime="20220408 18:51:25.328"/>
+</kw>
+<kw name="Get Average Price" library="Tradestab">
+<var>${average_price}</var>
+<msg timestamp="20220408 18:51:25.954" level="INFO">${average_price} = 1,240,000,000</msg>
+<status status="PASS" starttime="20220408 18:51:25.329" endtime="20220408 18:51:25.954"/>
+</kw>
+<kw name="Send Price" library="Tradestab">
+<arg>${average_price}</arg>
+<status status="PASS" starttime="20220408 18:51:25.954" endtime="20220408 18:51:28.022"/>
+</kw>
+<kw name="Send Trigger Ammount" library="Tradestab">
+<arg>${average_price}</arg>
+<status status="PASS" starttime="20220408 18:51:28.022" endtime="20220408 18:51:29.372"/>
+</kw>
+<kw name="Click 100 Percent" library="Tradestab">
+<status status="PASS" starttime="20220408 18:51:29.372" endtime="20220408 18:51:32.750"/>
+</kw>
+<kw name="Click Increase Amount" library="Tradestab">
+<status status="PASS" starttime="20220408 18:51:32.750" endtime="20220408 18:51:33.660"/>
+</kw>
+<kw name="Click Increase Amount" library="Tradestab">
+<status status="PASS" starttime="20220408 18:51:33.660" endtime="20220408 18:51:35.072"/>
+</kw>
+<kw name="Click Buy" library="Tradestab">
+<status status="PASS" starttime="20220408 18:51:35.072" endtime="20220408 18:51:37.052"/>
+</kw>
+<kw name="Find No Funds" library="Tradestab">
+<status status="PASS" starttime="20220408 18:51:37.052" endtime="20220408 18:51:38.186"/>
 </kw>
 <tag>DEBUG</tag>
-<status status="PASS" starttime="20220406 16:56:56.737" endtime="20220406 16:57:26.504"/>
+<status status="PASS" starttime="20220408 18:51:04.718" endtime="20220408 18:51:38.186"/>
 </test>
 <doc>Suite description</doc>
-<status status="PASS" starttime="20220406 16:56:56.550" endtime="20220406 16:57:26.506"/>
+<status status="PASS" starttime="20220408 18:51:04.579" endtime="20220408 18:51:38.187"/>
 </suite>
 <statistics>
 <total>

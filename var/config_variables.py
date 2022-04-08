@@ -5,3 +5,4 @@ device_name = "nobitex"
 no_reset = True
 full_reset = False
 udid = "202a91e20409"
+platformName = "android"
