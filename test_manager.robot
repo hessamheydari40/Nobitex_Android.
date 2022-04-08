@@ -1,6 +1,5 @@
 *** Settings ***
 Documentation    Suite description
-Library         customLibrary/TestCases.py
 Library         customLibrary/TabBar.py
 #Library         customLibrary/AppuimSessionHandler.py
 Library         customLibrary/General.py
@@ -31,7 +30,16 @@ NOBIAPP53
     click increase amount
     click buy
     find no funds
-
+NOBIAPP5
+    [Tags]    DEBUG
+    open application
+    trades tab
+    select order type changer
+    select fast order type
+    click 100 percent
+    click buy
+    click confirm
+    find succesfull
 NOBIAPP54
     [Tags]    DEBUG
     open application
@@ -54,9 +62,61 @@ NOBIAPP59
     click increase amount
     click buy
     find no funds
-NOBIAPP60
+NOBIAPP4
     [Tags]    DEBUG
-    NOBIAPP60
+    open application
+    trades tab
+    click 100 percent
+    click buy
+    click confirm
+    find succesfull
+NOBIAPP6
+    [Tags]    DEBUG
+    open application
+    trades tab
+    select order type changer
+    select trigger order type
+    click 100 percent
+    send trigger ammount  12333
+    click buy
+    click confirm
+    find succesfull
+NOBIAPP7
+    [Tags]    DEBUG
+    open application
+    trades tab
+    select sell button
+    ${average_price}=   get average price
+    send price  ${average_price}
+    click 100 percent
+    click sell
+    click confirm
+    find succesfull
+NOBIAPP8
+    [Tags]    DEBUG
+    open application
+    trades tab
+    select sell button
+    select order type changer
+    select fast order type
+    click 100 percent
+    click sell
+    click confirm
+    find succesfull
+NOBIAPP9
+    [Tags]    DEBUG
+    open application
+    trades tab
+    select sell button
+    select order type changer
+    select trigger order type
+    click 100 percent
+    ${average_price}=   get average price
+    send price  ${average_price}
+    send trigger ammount  111112
+    click sell
+    click confirm
+    find succesfull
 NOBIAPP55
     [Tags]    DEBUG
     open application
@@ -69,9 +129,6 @@ NOBIAPP55
     click increase amount
     click sell
     find no funds
-NOBIAPP61
-    [Tags]    DEBUG
-    NOBIAPP61
 NOBIAPP56
     [Tags]    DEBUG
     open application
