@@ -5,7 +5,6 @@ from time import sleep
 from selenium.webdriver.common.by import By
 
 from customLibrary.AppuimSessionHandler import AppuimSessionHandler
-from customLibrary import TestCases
 from var.config_variables import *
 
 

@@ -49,7 +49,7 @@ class Tradestab:
 
     def get_average_price(self):
         driver = self.session_handler.get_session_instance()
-        average_amount = driver.find_elements(by=By.ID, value="price")[1].text
+        average_amount = driver.find_elements(by=By.ID, value="price")[5].text
         return str(average_amount)
 
     def click_buy(self):
@@ -72,3 +72,10 @@ class Tradestab:
         driver=self.session_handler.get_session_instance()
         driver.find_element(by=By.ID,value="addAmountIV").click()
         sleep(0.5)
+    def click_confirm(self):
+        driver=self.session_handler.get_session_instance()
+        driver.find_element(by=By.ID,value="confirm").click()
+        sleep(0.5)
+    def find_succesfull(self):
+        driver=self.session_handler.get_session_instance()
+        driver.find_element(by=By.XPATH,value="//*[@text='با موفقیت اضافه شد']")
