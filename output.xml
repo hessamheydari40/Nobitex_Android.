@@ -1,37 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.9.7 on win32)" generated="20220408 23:38:53.019" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0 (Python 3.9.7 on win32)" generated="20220416 17:17:00.118" rpa="false" schemaversion="3">
 <suite id="s1" name="Test Manager" source="C:\Users\ad\PycharmProjects\pythonProject1\test_manager.robot">
-<test id="s1-t1" name="NOBIAPP4" line="65">
+<test id="s1-t1" name="NOBIAPPtest" line="230">
 <kw name="Open Application" library="General">
-<status status="PASS" starttime="20220408 23:38:53.158" endtime="20220408 23:39:07.009"/>
+<status status="PASS" starttime="20220416 17:17:00.376" endtime="20220416 17:17:17.714"/>
 </kw>
-<kw name="Trades Tab" library="TabBar">
-<status status="PASS" starttime="20220408 23:39:07.009" endtime="20220408 23:39:07.228"/>
+<kw name="Markets Tab" library="TabBar">
+<status status="PASS" starttime="20220416 17:17:17.714" endtime="20220416 17:17:21.825"/>
 </kw>
-<kw name="Click 100 Percent" library="Tradestab">
-<status status="PASS" starttime="20220408 23:39:07.228" endtime="20220408 23:39:11.650"/>
+<kw name="Nobitex Coins Click Subtab" library="MarketsTab">
+<status status="PASS" starttime="20220416 17:17:21.826" endtime="20220416 17:17:24.000"/>
 </kw>
-<kw name="Click Buy" library="Tradestab">
-<status status="PASS" starttime="20220408 23:39:11.650" endtime="20220408 23:39:13.537"/>
+<kw name="Nobitex Toman Subtab Click" library="MarketsTab">
+<status status="PASS" starttime="20220416 17:17:24.000" endtime="20220416 17:17:26.337"/>
 </kw>
-<kw name="Click Confirm" library="Tradestab">
-<status status="PASS" starttime="20220408 23:39:13.537" endtime="20220408 23:39:14.188"/>
+<kw name="Nobitex Tether Subtab Click" library="MarketsTab">
+<status status="PASS" starttime="20220416 17:17:26.338" endtime="20220416 17:17:28.624"/>
 </kw>
-<kw name="Find Succesfull" library="Tradestab">
-<status status="PASS" starttime="20220408 23:39:14.188" endtime="20220408 23:39:16.061"/>
-</kw>
-<tag>DEBUG</tag>
-<status status="PASS" starttime="20220408 23:38:53.157" endtime="20220408 23:39:16.061"/>
+<status status="PASS" starttime="20220416 17:17:00.375" endtime="20220416 17:17:28.624"/>
 </test>
 <doc>Suite description</doc>
-<status status="PASS" starttime="20220408 23:38:53.021" endtime="20220408 23:39:16.062"/>
+<status status="PASS" starttime="20220416 17:17:00.121" endtime="20220416 17:17:28.625"/>
 </suite>
 <statistics>
 <total>
 <stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">DEBUG</stat>
 </tag>
 <suite>
 <stat pass="1" fail="0" skip="0" id="s1" name="Test Manager">Test Manager</stat>

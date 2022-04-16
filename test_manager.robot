@@ -4,6 +4,9 @@ Library         customLibrary/TabBar.py
 #Library         customLibrary/AppuimSessionHandler.py
 Library         customLibrary/General.py
 Library         customLibrary/Tradestab.py
+Library         customLibrary/Menutab.py
+Library         customLibrary/MarketsTab.py
+Library         customLibrary/DashboardTab.py
 
 
 
@@ -85,7 +88,7 @@ NOBIAPP7
     [Tags]    DEBUG
     open application
     trades tab
-    select sell button
+    select sell section button
     ${average_price}=   get average price
     send price  ${average_price}
     click 100 percent
@@ -96,7 +99,7 @@ NOBIAPP8
     [Tags]    DEBUG
     open application
     trades tab
-    select sell button
+    select sell section button
     select order type changer
     select fast order type
     click 100 percent
@@ -107,7 +110,7 @@ NOBIAPP9
     [Tags]    DEBUG
     open application
     trades tab
-    select sell button
+    select sell section button
     select order type changer
     select trigger order type
     click 100 percent
@@ -121,7 +124,7 @@ NOBIAPP55
     [Tags]    DEBUG
     open application
     trades tab
-    select sell button
+    select sell section button
     ${average_price}=   get average price
     send price  ${average_Price}
     click 100 percent
@@ -133,7 +136,7 @@ NOBIAPP56
     [Tags]    DEBUG
     open application
     trades tab
-    select sell button
+    select sell section button
     select order type changer
     select fast order type
     click 100 percent
@@ -155,5 +158,82 @@ NOBIAPP57
     click increase amount
     click buy
     find no funds
+NOBIAPP95
+    [Tags]  DEBUG
+    open application
+    account tab
+    select security
+    click enable pin code
+    select auto lock
+    send auto lock minute  1
+    click confirm auto lock
+    background application  62
+    find enter pin
+NOBIAPP96
+    [Tags]  DEBUG
+    open application
+    account tab
+    select security
+    click enable pin code
+    select auto lock
+    send auto lock minute  2
+    click confirm auto lock
+    background application  122
+    find enter pin
+NOBIAPP97
+    [Tags]  DEBUG
+    open application
+    account tab
+    select security
+    click enable pin code
+    select auto lock
+    send auto lock minute  3
+    click confirm auto lock
+    background application  182
+    find enter pin
+
+NOBIAPP98
+    [Tags]  DEBUG
+    open application
+    account tab
+    select security
+    click enable pin code
+    select auto lock
+    send auto lock minute  4
+    click confirm auto lock
+    background application  242
+    find enter pin
+NOBIAPP41
+    [Tags]  DEBUG
+    open application
+    account tab
+    logout click
+NOBIAPP100
+    [Tags]  DEBUG
+    open application
+    markets tab
+    nobitex coins click subtab
+    btc irt star click favorite
+    dashboard tab
+    refresh dashboard tab
+    find btc starred favoriute
+NOBIAPP102
+    [Tags]  DEBUG
+    open application
+    markets tab
+    nobitex coins click subtab
+    nobitex toman subtab click
+    click btc market
+    click buy in market detail
+    find btc tarde page
+
+NOBIAPPtest
+    open application
+    markets tab
+    nobitex coins click subtab
+    nobitex toman subtab click
+    nobitex tether subtab click
+
+
 
 

@@ -1,4 +1,4 @@
-app_package = "app.nobitex.testnet"
+app_package = "market.nobitex.testnet.dev"
 app_acctivity = "ir.nobitex.activities.SplashScreen"
 device_platform = "android"
 device_name = "nobitex"

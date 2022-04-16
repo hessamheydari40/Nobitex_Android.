@@ -2,12 +2,13 @@ from os.path import join
 from pathlib import Path
 from time import sleep
 
+from selenium.webdriver.common.by import By
+
 from customLibrary.AppuimSessionHandler import AppuimSessionHandler
 from var.config_variables import *
 
 
 class General:
-
     def open_application(self):
         app_path = Path(__file__).parent.parent
         app_path = join(str(app_path), 'app', 'Nobitex_Testnet.apk')
@@ -20,3 +21,8 @@ class General:
         }
         openn = AppuimSessionHandler.open_application(caps=caps)
         sleep(5)
+
+
+
+
+
